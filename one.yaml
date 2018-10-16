@@ -1,0 +1,40 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/bartekmo/one/1.0.0
+info:
+  description: This is a simple API
+  version: "1.0.0"
+  title: Simple Inventory API
+  contact:
+    email: me@my-company.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: admins
+    description: Secured Admin-only calls
+  - name: developers
+    description: Operations available to regular developers
+paths:
+  /test/one:
+    get:
+      responses:
+        '200':
+          description: One
+          content:
+            application/json:
+              schema:
+                type: string
+                example: 1
+  /test/two:
+    get:
+      responses:
+        '200':
+          description: Two
+          content:
+            application/json:
+              schema:
+                type: string
+                example: 2
